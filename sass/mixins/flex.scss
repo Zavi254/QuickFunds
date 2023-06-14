@@ -1,5 +1,4 @@
-@mixin flexbox($display, $direction, $justify-content) {
+@mixin flexbox($display, $direction) {
   display: $display;
   flex-direction: $direction;
-  justify-content: $justify-content;
 }

@@ -1,0 +1,39 @@
+@import "./partials/reset";
+@import "./partials/typography";
+@import "./partials/layout";
+@import "./mixins/flex.scss";
+@import "./mixins/buttons.scss";
+
+/* Navigation Bar */
+nav {
+  @include flexbox(flex, row, space-around);
+  font-family: $font-family-primary;
+  padding-top: 2%;
+  #logo {
+    text-decoration: none;
+    font: {
+      size: $font-size-large;
+      weight: $font-weight-bold;
+    }
+    color: $primary-color;
+    #fundsBannerText {
+      color: $green-color;
+    }
+  }
+  ul {
+    list-style-type: none;
+    font-size: $font-size-large;
+    width: 50%;
+    @include flexbox(flex, row, space-between);
+    a {
+      text-decoration: none;
+      color: $navbar-color;
+    }
+  }
+  .btn-contact-us {
+    background-color: $primary-color;
+    color: #fff;
+    @include button;
+  }
+}
+/* End of Navigation Bar */

@@ -1,9 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Navigation Bar */
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -15,6 +20,7 @@ nav {
   align-items: center;
   padding: 1%;
   box-shadow: 0 3px 24px rgba(108, 108, 108, 0.11);
+  background-color: #fff;
 }
 nav #logo {
   text-decoration: none;
@@ -41,9 +47,10 @@ nav .btn-contact-us {
   background-color: #2a6877;
   color: #fff;
   text-decoration: none;
-  padding: 15px;
+  padding: 7px;
   border-radius: 50px;
   font-size: 18px;
+  border: none;
 }
 
 /* End of Navigation Bar */
@@ -66,18 +73,19 @@ nav .btn-contact-us {
   font-family: "Raleway", "sans-serif";
   font-weight: 700;
 }
-#hero-section .hero-section-textContent p {
+#hero-section .hero-section-textContent .headingText {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "DM Sans", "sans-serif";
   color: #6f6969;
   margin-bottom: 5%;
 }
 #hero-section .hero-section-textContent .btn-get-started {
   text-decoration: none;
-  padding: 15px;
+  padding: 7px;
   border-radius: 50px;
   font-size: 18px;
+  border: none;
   border: 2px solid #2a6877;
   color: #2a6877;
 }
@@ -90,3 +98,81 @@ nav .btn-contact-us {
 }
 
 /*End of Hero Section*/
+/*Our Services*/
+#services {
+  height: 95vh;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(100.33deg, rgba(201, 228, 222, 0.6) -36.88%, rgba(206, 228, 224, 0.463495) 21.99%, rgba(208, 228, 224, 0.414385) 30.82%, rgba(223, 227, 231, 0) 102.68%);
+}
+#services h2 {
+  text-align: center;
+  font-family: "Raleway", "sans-serif";
+  color: #2a6877;
+  font-weight: 700;
+  font-size: 45px;
+}
+#services .loanCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3%;
+  margin-top: 5%;
+}
+#services .loanCards .card {
+  flex-basis: 32%;
+  text-align: center;
+  padding: 3%;
+  background: rgba(240, 241, 243, 0.2);
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 38px;
+}
+#services .loanCards .card p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "DM Sans", "sans-serif";
+  color: #6f6969;
+  margin-bottom: 5%;
+}
+#services .loanCards .card h5 {
+  font-family: "Raleway", "sans-serif";
+  font-size: 24px;
+  font-weight: 700;
+}
+#services .loanCards .card * {
+  margin-top: 2%;
+}
+#services .loanCards .card button {
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 50px;
+  font-size: 18px;
+  border: none;
+  font-family: "DM Sans", "sans-serif";
+  border: 2px solid rgba(42, 104, 119, 0.49);
+  border-radius: 50px;
+  color: #2a6877;
+  font-weight: 700;
+}
+#services .loanCards .card button:hover {
+  cursor: pointer;
+}
+#services .viewMoreBtn {
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 50px;
+  font-size: 18px;
+  border: none;
+  background-color: #2a6877;
+  border-radius: 50px;
+  color: #fff;
+  padding: 12px 60px;
+}
+#services .viewMoreBtn:hover {
+  cursor: pointer;
+}
+
+/*End of Our Services*/

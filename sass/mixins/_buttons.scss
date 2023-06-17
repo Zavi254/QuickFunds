@@ -1,6 +1,7 @@
 @mixin button {
   text-decoration: none;
-  padding: 15px;
+  padding: 7px;
   border-radius: 50px;
   font-size: $font-size-base;
+  border: none;
 }

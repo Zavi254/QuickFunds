@@ -21,6 +21,7 @@ nav {
   padding: 1%;
   box-shadow: 0 3px 24px rgba(108, 108, 108, 0.11);
   background-color: #fff;
+  z-index: 1;
 }
 nav #logo {
   text-decoration: none;
@@ -100,7 +101,7 @@ nav .btn-contact-us {
 /*End of Hero Section*/
 /*Our Services*/
 #services {
-  height: 95vh;
+  height: 100vh;
   padding: 3%;
   display: flex;
   flex-direction: column;
@@ -176,3 +177,54 @@ nav .btn-contact-us {
 }
 
 /*End of Our Services*/
+/*How we Work Section*/
+#howWeWork {
+  height: auto;
+  padding-top: 5%;
+}
+#howWeWork h2 {
+  text-align: center;
+  font-family: "Raleway", "sans-serif";
+  color: #2a6877;
+  font-weight: 700;
+  font-size: 45px;
+}
+#howWeWork p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "DM Sans", "sans-serif";
+  color: #6f6969;
+  margin-bottom: 5%;
+  text-align: center;
+}
+#howWeWork .workContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+  width: 80%;
+  margin: auto;
+}
+#howWeWork .workContainer .workTextContainer {
+  width: 50%;
+  position: relative;
+}
+#howWeWork .workContainer .workTextContainer img {
+  position: absolute;
+  top: -8%;
+  left: -7%;
+  width: 90px;
+}
+#howWeWork .workContainer .workTextContainer h3 {
+  font-family: "Raleway", "sans-serif";
+  color: #2a6877;
+  font-weight: 700;
+  font-size: 24px;
+}
+#howWeWork .workContainer .workTextContainer * {
+  margin-bottom: 4%;
+  text-align: left;
+}
+
+/*End of How we Work Section*/

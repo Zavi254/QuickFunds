@@ -109,10 +109,12 @@ nav {
   );
   h2 {
     text-align: center;
-    font-family: $font-family-Raleway;
+    font: {
+      family: $font-family-Raleway;
+      weight: $font-weight-bold;
+      size: $font-size-larger;
+    }
     color: $primary-color;
-    font-weight: $font-weight-bold;
-    font-size: $font-size-larger;
   }
   .loanCards {
     @include flexbox(flex, row);
@@ -174,9 +176,8 @@ nav {
 /*End of Our Services*/
 
 /*How we Work Section*/
-#howWeWork {
+#how-we-work {
   height: auto;
-  // padding: 3%;
   padding-top: 5%;
   h2 {
     text-align: center;
@@ -205,7 +206,7 @@ nav {
     .workTextContainer {
       width: 50%;
       position: relative;
-      img{
+      img {
         position: absolute;
         top: -8%;
         left: -7%;
@@ -224,5 +225,72 @@ nav {
     }
   }
 }
-
 /*End of How we Work Section*/
+
+/*About Us Section*/
+#about-us {
+  height: 100vh;
+  padding: 5%;
+  background: linear-gradient(
+    100.33deg,
+    rgba(201, 228, 222, 0.6) -36.88%,
+    rgba(206, 228, 224, 0.463495) 21.99%,
+    rgba(208, 228, 224, 0.414385) 30.82%,
+    rgba(223, 227, 231, 0) 102.68%
+  );
+  h2 {
+    text-align: center;
+    font: {
+      family: $font-family-Raleway;
+      weight: $font-weight-bold;
+      size: $font-size-larger;
+    }
+    color: $primary-color;
+  }
+  .container-about-us {
+    @include flexbox(flex, row);
+    justify-content: space-around;
+    align-items: center;
+    .imageContainer {
+      flex-basis: 50%;
+      p {
+        font: {
+          size: $font-size-base;
+          weight: $font-weight-normal;
+          family: $font-family-primary;
+        }
+        color: $text-color;
+        margin-bottom: 5%;
+        text-align: left;
+      }
+    }
+    form {
+      @include flexbox(flex, column);
+      flex-basis: 30%;
+      height: 500px;
+      background: #ffffff;
+      padding: 45px 47px;
+      border-radius: 21px;
+      input {
+        border-radius: 21px;
+        padding: 10px;
+        border: 1px solid grey;
+        outline-color: none;
+      }
+      button {
+        @include button;
+        color: #fff;
+        background-color: $primary-color;
+        width: 40%;
+        margin: auto;
+      }
+      * {
+        font: {
+          family: $font-family-Raleway;
+          weight: $font-weight-normal;
+        }
+      }
+    }
+  }
+}
+/*End of About Us Section*/

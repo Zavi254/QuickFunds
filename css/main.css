@@ -112,9 +112,9 @@ nav .btn-contact-us {
 #services h2 {
   text-align: center;
   font-family: "Raleway", "sans-serif";
-  color: #2a6877;
   font-weight: 700;
   font-size: 45px;
+  color: #2a6877;
 }
 #services .loanCards {
   display: flex;
@@ -178,18 +178,18 @@ nav .btn-contact-us {
 
 /*End of Our Services*/
 /*How we Work Section*/
-#howWeWork {
+#how-we-work {
   height: auto;
   padding-top: 5%;
 }
-#howWeWork h2 {
+#how-we-work h2 {
   text-align: center;
   font-family: "Raleway", "sans-serif";
   color: #2a6877;
   font-weight: 700;
   font-size: 45px;
 }
-#howWeWork p {
+#how-we-work p {
   font-size: 18px;
   font-weight: 500;
   font-family: "DM Sans", "sans-serif";
@@ -197,7 +197,7 @@ nav .btn-contact-us {
   margin-bottom: 5%;
   text-align: center;
 }
-#howWeWork .workContainer {
+#how-we-work .workContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -206,25 +206,87 @@ nav .btn-contact-us {
   width: 80%;
   margin: auto;
 }
-#howWeWork .workContainer .workTextContainer {
+#how-we-work .workContainer .workTextContainer {
   width: 50%;
   position: relative;
 }
-#howWeWork .workContainer .workTextContainer img {
+#how-we-work .workContainer .workTextContainer img {
   position: absolute;
   top: -8%;
   left: -7%;
   width: 90px;
 }
-#howWeWork .workContainer .workTextContainer h3 {
+#how-we-work .workContainer .workTextContainer h3 {
   font-family: "Raleway", "sans-serif";
   color: #2a6877;
   font-weight: 700;
   font-size: 24px;
 }
-#howWeWork .workContainer .workTextContainer * {
+#how-we-work .workContainer .workTextContainer * {
   margin-bottom: 4%;
   text-align: left;
 }
 
 /*End of How we Work Section*/
+/*About Us Section*/
+#about-us {
+  height: 100vh;
+  padding: 5%;
+  background: linear-gradient(100.33deg, rgba(201, 228, 222, 0.6) -36.88%, rgba(206, 228, 224, 0.463495) 21.99%, rgba(208, 228, 224, 0.414385) 30.82%, rgba(223, 227, 231, 0) 102.68%);
+}
+#about-us h2 {
+  text-align: center;
+  font-family: "Raleway", "sans-serif";
+  font-weight: 700;
+  font-size: 45px;
+  color: #2a6877;
+}
+#about-us .container-about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#about-us .container-about-us .imageContainer {
+  flex-basis: 50%;
+}
+#about-us .container-about-us .imageContainer p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "DM Sans", "sans-serif";
+  color: #6f6969;
+  margin-bottom: 5%;
+  text-align: left;
+}
+#about-us .container-about-us form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  height: 500px;
+  background: #ffffff;
+  padding: 45px 47px;
+  border-radius: 21px;
+}
+#about-us .container-about-us form input {
+  border-radius: 21px;
+  padding: 10px;
+  border: 1px solid grey;
+  outline-color: none;
+}
+#about-us .container-about-us form button {
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 50px;
+  font-size: 18px;
+  border: none;
+  color: #fff;
+  background-color: #2a6877;
+  width: 40%;
+  margin: auto;
+}
+#about-us .container-about-us form * {
+  font-family: "Raleway", "sans-serif";
+  font-weight: 500;
+}
+
+/*End of About Us Section*/

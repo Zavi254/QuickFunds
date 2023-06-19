@@ -294,3 +294,62 @@ nav {
   }
 }
 /*End of About Us Section*/
+
+/*Footer Section*/
+#contact-us {
+  height: auto;
+  background: {
+    image: url(https://res.cloudinary.com/dogmqg8to/image/upload/v1687154323/20560797_hexa_dan_wave_10_ciajtr.jpg);
+    position: center center;
+    size: cover;
+    filter: blur(4px);
+  }
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  color: #fff;
+  padding: 3%;
+  font-family: $font-family-Raleway;
+  @include flexbox(flex, row);
+  align-items: center;
+  justify-content: space-around;
+  .left-title-content {
+    * {
+      margin-bottom: 10%;
+    }
+    .fab {
+      font-size: $font-size-large;
+      margin-right: 5%;
+    }
+    h5 {
+      font-weight: $font-weight-bold;
+      font-size: $font-size-large;
+    }
+    #funds {
+      color: $green-color;
+    }
+  }
+  .right-content {
+    h5 {
+      font-size: $font-size-large;
+    }
+    @include flexbox(flex, row);
+    justify-content: space-between;
+    flex-basis: 30%;
+    .services-container {
+      * {
+        margin-bottom: 10%;
+      }
+    }
+  }
+  .contact-us-container {
+    width: 45%;
+    * {
+      margin-bottom: 5%;
+    }
+    .fas {
+      margin-right: 2%;
+    }
+  }
+}
+
+/*End of Footer Section*/

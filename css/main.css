@@ -290,3 +290,57 @@ nav .btn-contact-us {
 }
 
 /*End of About Us Section*/
+/*Footer Section*/
+#contact-us {
+  height: auto;
+  background-image: url(https://res.cloudinary.com/dogmqg8to/image/upload/v1687154323/20560797_hexa_dan_wave_10_ciajtr.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  color: #fff;
+  padding: 3%;
+  font-family: "Raleway", "sans-serif";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#contact-us .left-title-content * {
+  margin-bottom: 10%;
+}
+#contact-us .left-title-content .fab {
+  font-size: 24px;
+  margin-right: 5%;
+}
+#contact-us .left-title-content h5 {
+  font-weight: 700;
+  font-size: 24px;
+}
+#contact-us .left-title-content #funds {
+  color: #39C260;
+}
+#contact-us .right-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 30%;
+}
+#contact-us .right-content h5 {
+  font-size: 24px;
+}
+#contact-us .right-content .services-container * {
+  margin-bottom: 10%;
+}
+#contact-us .contact-us-container {
+  width: 45%;
+}
+#contact-us .contact-us-container * {
+  margin-bottom: 5%;
+}
+#contact-us .contact-us-container .fas {
+  margin-right: 2%;
+}
+
+/*End of Footer Section*/
